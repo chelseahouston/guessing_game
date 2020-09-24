@@ -7,6 +7,6 @@ def main():
   if guess == number:
     print("Good job, " + myName + "! You guessed my number")
   else:
-    print("Sorry, " + myName + " that's not the number I'm thinking of. Better luck next time!")
+    print("Sorry, " + myName + " that's not the number I'm thinking of. Try again!")
     main()
 main()
