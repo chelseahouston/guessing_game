@@ -15,8 +15,13 @@ def main():
     if guess == number:
       print("Good job, " + myName + "! You guessed my number")
       break
-    else:
-      print(f"Sorry, {myName}, that's not the number I'm thinking of. You have {count} attempt(s) left.")
+    elif guess > number:
+      print(f"Sorry, {myName}, that's not the number I'm thinking of. Your guess is too high!")
+      print(f"You have {count} attempt(s) left.")
+      count -=1
+    elif guess < number:
+      print(f"Sorry, {myName}, that's not the number I'm thinking of. Your guess is too low!")
+      print(f"You have {count} attempt(s) left.")
       count -=1
   print(f"The correct number was {number}.")
   print("Congratulations if you got it correct. If not, better luck next time!")
