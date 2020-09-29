@@ -23,7 +23,5 @@ def main():
       print(f"Sorry, {myName}, that's not the number I'm thinking of. Your guess is too low!")
       print(f"You have {count} attempt(s) left.")
       count -=1
-  print(f"The correct number was {number}.")
-  print("Congratulations if you got it correct. If not, better luck next time!")
-  print(emoji.emojize(":winking_face_with_tongue:"))
+  print(f"The correct number was {number}. " + emoji.emojize(":winking_face_with_tongue:"))
 main()
