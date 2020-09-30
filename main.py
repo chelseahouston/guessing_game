@@ -24,5 +24,4 @@ def main():
       print(f"You have {count} attempt(s) left.")
       count -=1
   print(f"The correct number was {number}. " + emoji.emojize(":winking_face_with_tongue:"))
-
 main()
