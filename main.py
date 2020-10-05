@@ -43,4 +43,21 @@ def main():
 
   # REVEAL CORRECT NUMBER --
   print(f"The correct number was {number}. " + emoji.emojize(":winking_face_with_tongue:"))
+
+  # RUN AGAIN? ---
+def run():
+  while True:
+    runagain = input("Run again? (Y/N): ").upper()
+    if runagain not in ('Y', 'N'):
+      print("Invalid Input.")
+      run()
+      break
+    if runagain == 'Y':
+      main()
+      run()
+      break
+    else:
+      print("Thank you for playing. Have a good day.")
+      break
 main()
+run()
